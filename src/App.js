@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ReactComponent as Top } from './assets/svg/top.svg';
 import { ReactComponent as Bottom } from './assets/svg/bottom.svg';
 import './App.css';
 
-function App() {
+const App = () => {
+  const [popup, togglePopup] = useState(false);
+  const [count, setCount] = useState(1);
+  const max = 2;
+
   return (
     <div className="App">
       ב“ה<br />
@@ -33,9 +37,21 @@ function App() {
       06.11.25.02.13 ou 06.23.25.50.99<br />
 
       <div className="btns">
-        <button>Nous viendrons</button>
-        <button>Nous ne viendrons pas</button>
+        <button onClick={() => togglePopup(!popup)}>Nous seront présent</button>
+        <button>Nous ne seront pas présent</button>
       </div>
+
+      {popup &&
+        <div className="popup">
+          <form>
+            Combien de personnes seront présentes :<br/>
+            <button type="button" onClick={() => setCount(count === 1 ? count : count - 1)}>-</button>
+            <input type="text" value={count} onChange={() => { }} />
+            <button type="button" onClick={() => setCount(count === max ? count : count + 1)}>+</button><br />
+            <button>Valider</button>
+          </form>
+        </div>
+      }
     </div>
   );
 }

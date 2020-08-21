@@ -41,6 +41,24 @@ svg g {
   height: 50px;
 }
 
+.popup {
+  position: fixed;
+  width: 50%;
+  height: 50%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #fff;
+  padding: 30px;
+}
+
+.popup input {
+  width: 20px;
+  text-align: center;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
