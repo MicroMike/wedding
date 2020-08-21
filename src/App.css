@@ -2,7 +2,7 @@
   font-family: 'Eaves';
   font-size: 35px;
   text-align: center;
-  background-image: url('/bg-repeat.png');
+  background-image: url('./assets/img/bg-repeat.png');
   background-size: contain;
   color: #504343;
   padding-bottom: 70px;
@@ -78,12 +78,12 @@ svg g {
 
 @font-face {
   font-family: "Paradise";
-  src: url("/fonts/Paradise.woff2") format("woff2"),
-    url("/fonts/Paradise.woff") format("woff");
+  src: url("./assets/fonts/Paradise.woff2") format("woff2"),
+    url("./assets/fonts/Paradise.woff") format("woff");
 }
 
 @font-face {
   font-family: "Eaves";
-  src: url("/fonts/Eaves.woff2") format("woff2"),
-    url("/fonts/Eaves.woff") format("woff");
+  src: url("./assets/fonts/Eaves.woff2") format("woff2"),
+    url("./assets/fonts/Eaves.woff") format("woff");
 }
