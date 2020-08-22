@@ -14,11 +14,11 @@ const App = () => {
       <Top />
       <div className="title">
         <div>
-          Shanael
+          Lea
         </div>
         <div>&</div>
         <div>
-          Kévin
+          Jordan
         </div>
       </div>
       <Bottom />
@@ -32,7 +32,7 @@ const App = () => {
       Suivie de la réception au château de santeny<br />
       2 route de marolles, 94440 Santeny<br />
       <br />
-      Shanael & Kevin<br />
+      Lea & Jordan<br />
       15, Boulevard Kennedy, 94000 Créteil<br />
       06.11.25.02.13 ou 06.23.25.50.99<br />
 
